@@ -1,0 +1,50 @@
+{
+  "name": "ng4m",
+  "version": "1.0.0",
+  "productName": "Next Gen 4 Minecraft",
+  "description": "Launcher officiel de NG4M, fork du HeliosLauncher en Electron",
+  "author": "NG4M Teams (Nercoria) (https://github.com/NercoriaMc/)",
+  "license": "MIT",
+  "homepage": "https://github.com/NercoriaMc/NG4MLauncher",
+  "bugs": {
+    "url": "https://discord.ng4m.fr/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . --remote-debugging-port=9222",
+    "dist": "electron-builder build",
+    "dist:win": "npm run dist -- -w",
+    "dist:mac": "npm run dist -- -m",
+    "dist:linux": "npm run dist -- -l",
+    "lint": "eslint --config .eslintrc.json ."
+  },
+  "engines": {
+    "node": "16.x.x"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.4",
+    "adm-zip": "^0.5.9",
+    "async": "^3.2.3",
+    "ejs": "^3.1.6",
+    "ejs-electron": "^2.1.1",
+    "electron-updater": "^4.6.5",
+    "fs-extra": "^10.0.0",
+    "github-syntax-dark": "^0.5.0",
+    "helios-core": "~0.1.0",
+    "jquery": "^3.6.0",
+    "node-stream-zip": "^1.15.0",
+    "request": "^2.88.2",
+    "semver": "^7.3.5",
+    "tar-fs": "^2.1.1",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "electron": "^16.0.8",
+    "electron-builder": "^22.14.13",
+    "eslint": "^8.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NercoriaMc/NG4MLauncher.git"
+  }
+}
