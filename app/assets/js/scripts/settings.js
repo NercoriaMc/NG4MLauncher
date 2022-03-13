@@ -4,6 +4,7 @@ const semver = require('semver')
 
 const { JavaGuard } = require('./assets/js/assetguard')
 const { MSFT_OPCODE, MSFT_REPLY_TYPE, MSFT_ERROR } = require('./assets/js/ipcconstants')
+const {isDisplayableError} = require('helios-core/common')
 
 const settingsState = {
     invalid: new Set()
